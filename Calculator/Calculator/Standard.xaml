@@ -1,0 +1,55 @@
+﻿<Window x:Class="Calculator.Standard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="Calculator Standard" Height="541" Width="469">
+    <Grid Margin="10,0,10,3">
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Help">
+                <MenuItem Header="About" Click="About_Click"/>
+            </MenuItem>
+            <MenuItem Header="File">
+                <MenuItem Header="Cut" Click="Cut_Click"/>
+                <MenuItem Header="Copy" Click="Copy_Click"/>
+                <MenuItem Header="Paste" Click="Paste_Click"/>
+            </MenuItem>
+        </Menu>
+        <Label Content="Standard" HorizontalAlignment="Left" Margin="69,9,0,0" VerticalAlignment="Top" Width="130" FontSize="16" Height="31" />
+        <TextBlock Name="CurrentResult" HorizontalAlignment="Right" Height="47" Margin="37,128,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="380" TextAlignment="Right" FontSize="25"/>
+        <Button Content="7" Name="Button7" HorizontalAlignment="Left" Height="38" Margin="10,317,0,0" VerticalAlignment="Top" Width="87"/>
+        <Button Content="8" Name="Button8" HorizontalAlignment="Left" Height="38" Margin="103,317,0,0" VerticalAlignment="Top" Width="88"/>
+        <Button Content="9" Name="Button9" HorizontalAlignment="Left" Height="38" Margin="197,317,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button Content="4" Name="Button4" HorizontalAlignment="Left" Height="38" Margin="10,360,0,0" VerticalAlignment="Top" Width="87"/>
+        <Button Content="5" Name="Button5" HorizontalAlignment="Left" Height="38" Margin="103,360,0,0" VerticalAlignment="Top" Width="88"/>
+        <Button Content="6" Name="Button6" HorizontalAlignment="Left" Height="38" Margin="197,360,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button Content="1" Name="Button1" HorizontalAlignment="Left" Height="37" Margin="10,404,0,0" VerticalAlignment="Top" Width="87"/>
+        <Button Content="2" Name="Button2" HorizontalAlignment="Left" Height="37" Margin="103,404,0,0" VerticalAlignment="Top" Width="88"/>
+        <Button Content="3" Name="Button3" HorizontalAlignment="Left" Height="37" Margin="197,404,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="0.468,0.564"/>
+        <Button Content="X" Name="ProdButton" HorizontalAlignment="Left" Height="38" Margin="302,317,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button Content="-" Name="Minus" HorizontalAlignment="Left" Height="39" Margin="302,360,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button Content="+" Name="Plus" HorizontalAlignment="Left" Height="37" Margin="302,404,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="0.468,0.501"/>
+        <Button Content="÷" Name="Divide" HorizontalAlignment="Left" Height="38" Margin="302,274,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button Content="=" Name="Equal" HorizontalAlignment="Left" Height="38" Margin="302,446,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button Content="." Name="Point" HorizontalAlignment="Left" Height="38" Margin="197,446,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="0.489,0.501"/>
+        <Button Content="0" Name="Button0" HorizontalAlignment="Left" Height="38" Margin="103,446,0,0" VerticalAlignment="Top" Width="88"/>
+        <Button Content="+/-" Name="Negat" HorizontalAlignment="Left" Height="38" Margin="10,446,0,0" VerticalAlignment="Top" Width="87"/>
+        <Button Content="√x" Name="Sqrt" HorizontalAlignment="Left" Height="38" Margin="197,274,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button Content="x²" Name="Pow2" HorizontalAlignment="Left" Height="38" Margin="103,274,0,0" VerticalAlignment="Top" Width="88"/>
+        <Button Content="1/x" Name="Power_1" HorizontalAlignment="Left" Height="38" Margin="10,274,0,0" VerticalAlignment="Top" Width="87"/>
+        <Button Content="%" Name="modulo"  HorizontalAlignment="Left" Height="34" Margin="10,235,0,0" VerticalAlignment="Top" Width="87"/>
+        <Button Content="CE" Name="DeleteTheLastCharacter" HorizontalAlignment="Left" Height="34" Margin="103,235,0,0" VerticalAlignment="Top" Width="87"/>
+        <Button Content="C"  Name="EmptyTheCurrentOperation" HorizontalAlignment="Right" Height="34" Margin="0,235,163,0" VerticalAlignment="Top" Width="89"/>
+        <Button Content="delete" Name="DeleteCharacter" Height="34" Margin="303,235,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="88"/>
+        <Button Content="MC" Name="MemoryClear" HorizontalAlignment="Left" Height="26" Margin="11,191,0,0" VerticalAlignment="Top" Width="57"/>
+        <Button Content="MR" Name="ShowValueFromMEmory" HorizontalAlignment="Left" Height="26" Margin="78,191,0,0" VerticalAlignment="Top" Width="57"/>
+        <Button Content="M+" Name="AddInMemory" HorizontalAlignment="Left" Height="26" Margin="142,191,0,0" VerticalAlignment="Top" Width="57"/>
+        <Button Content="M-" Name="DeleteInMemory" HorizontalAlignment="Left" Height="26" Margin="206,191,0,0" VerticalAlignment="Top" Width="57"/>
+        <Button Content="MS" Name="SaveInMemoryCurrentDisplayedValue" HorizontalAlignment="Left" Height="26" Margin="270,191,0,0" VerticalAlignment="Top" Width="57"/>
+        <TextBlock HorizontalAlignment="Right" Name="PastResults" Height="47" Margin="0,76,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="380" TextAlignment="Right" FontSize="25"/>
+        <ComboBox Text="M" Name="ShowStackFromMemory" HorizontalAlignment="Left" Height="28" Margin="334,188,0,0" VerticalAlignment="Top" Width="57"/>
+    </Grid>
+</Window>
